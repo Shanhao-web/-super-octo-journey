@@ -1,0 +1,27 @@
+$display4-size: 2.5rem;
+$jumbotron-bg: rgba(255, 255, 255, 0.39);
+
+@import "bootstrap";
+.container-background{
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-image: url(image_path('background.jpg'));
+
+
+}
+.jumbotron-landing{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.nav-landing:link,
+.nav-landing:visited{
+    color: #5c97bf;
+}
+.nav-landing:hover,
+.nav-landing:active{
+    color: #89c4f4;
+    text-decoration: none;
+}
+
