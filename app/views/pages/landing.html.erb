@@ -1,9 +1,14 @@
+<% if user_signed_in? %>
+
+<%else %>
 <div class="jumbotron jumbotron-landing">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4">Привет, студент!</h1>
+  <p class="lead">Этот сайт тебе поможет (пока не придумал в чем).</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary" href="#" role="button">Регистрация</a>
-  <a class="btn btn-success" href="#" role="button">Войти</a>
-  <a class="btn btn-secondary" href="#" role="button">Продолжить без регистрации</a>
+  <p class="lead">
+    <%= link_to "Регистрация",new_user_registration_path, class:"btn btn-primary" %>
+    <%= link_to "Войти", new_user_session_path, class:"btn btn-secondary" %>
+  </p>
 </div>
+
+<%end%>
