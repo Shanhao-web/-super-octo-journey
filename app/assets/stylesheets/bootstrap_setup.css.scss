@@ -1,5 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap);
 $display4-size: 2.5rem;
 $jumbotron-bg: rgba(255, 255, 255, 0.39);
+$navbar-border-radius: 0;
+$card-cap-bg: rgba(255, 255, 255, 0.5);
+$card-bg: rgba(255, 255, 255, 0.39);
 
 @import "bootstrap";
 .container-background{
@@ -10,11 +14,7 @@ $jumbotron-bg: rgba(255, 255, 255, 0.39);
 
 
 }
-.jumbotron-landing{
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-}
+
 .nav-landing:link,
 .nav-landing:visited{
     color: #5c97bf;
@@ -24,4 +24,22 @@ $jumbotron-bg: rgba(255, 255, 255, 0.39);
     color: #89c4f4;
     text-decoration: none;
 }
+.container-login {
+    padding-right:0;
+    padding-left:0;
+}
+.bg-transparent {
+    background-color:rgba(255, 255, 255, 0);
+}
 
+.text-logo{
+    font-family: 'Bebas Neue', cursive;
+}
+.landing-logo{
+    font-size:2rem;
+}
+.devise-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
