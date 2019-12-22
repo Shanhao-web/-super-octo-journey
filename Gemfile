@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise' , '~>4.7.1'
+#gem "paperclip", "~> 6.0.0"
+gem 'rubocop', require: false
 
 gem 'bootstrap', '~> 4.3.1'
 group :development do

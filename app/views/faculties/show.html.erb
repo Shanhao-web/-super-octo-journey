@@ -1,0 +1,19 @@
+<div class="card faculties-form ">
+  <div class="card-header">
+    
+
+
+<p>
+  <strong>Description:</strong>
+  <%= @faculty.description %>
+</p>
+<% if @faculty.user == current_user %>
+<%= link_to 'Edit', edit_faculty_path(@faculty) %> 
+<% end %>
+<%= link_to 'Back', faculties_path %>
+</div>
+</div>
+<p>
+  <strong>Инофрмация о факультете:</strong>
+  <%= @faculty.description %>
+</p>
